@@ -1,6 +1,6 @@
 # SQL-CLAUSES-AGGREGATE-FUNCTIONS
 
-SQL is followed by a unique set of rules and guidelines called Syntax. This tutorial gives you a quick start with SQL by listing all the basic SQL Syntax.
+►SQL is followed by a unique set of rules and guidelines called Syntax. This tutorial gives you a quick start with SQL by listing all the basic SQL Syntax.
 
 All the SQL statements start with any of the keywords like SELECT, INSERT, UPDATE, DELETE, ALTER, DROP, CREATE, USE, SHOW and all the statements end with a semicolon (;).
 
@@ -205,3 +205,114 @@ COMMIT;
 
 ROLLBACK;
 
+►SQL Aggregate Functions
+
+SQL aggregation function is used to perform the calculations on multiple rows of a single column of a table. It returns a single value.
+
+It is also used to summarize the data.
+
+►Types of SQL Aggregation Function
+
+![image](https://user-images.githubusercontent.com/91977965/137272400-ddf81845-1a68-47a2-b2ff-1246c0a6b617.png)
+
+1. COUNT FUNCTION
+
+COUNT function is used to Count the number of rows in a database table. It can work on both numeric and non-numeric data types.
+
+COUNT function uses the COUNT(*) that returns the count of all the rows in a specified table. COUNT(*) considers duplicate and Null.
+
+• Syntax
+
+COUNT(*) 
+
+or  
+
+COUNT( [ALL|DISTINCT] expression )  
+
+
+2. SUM Function
+
+Sum function is used to calculate the sum of all selected columns. It works on numeric fields only.
+
+• Syntax
+
+SUM()  
+
+or  
+
+SUM( [ALL|DISTINCT] expression )  
+
+Example: SUM()
+
+SELECT SUM(COST) 
+
+FROM PRODUCT_MAST;  
+
+3. AVG function
+
+The AVG function is used to calculate the average value of the numeric type. AVG function returns the average of all non-Null values.
+
+• Syntax
+
+SUM()  
+
+or  
+
+SUM( [ALL|DISTINCT] expression )  
+
+Example: SUM()
+
+
+SELECT SUM(COST)  
+
+FROM PRODUCT_MAST;  
+
+4. MAX Function
+
+MAX function is used to find the maximum value of a certain column. This function determines the largest value of all selected values of a column.
+
+• Syntax
+
+AVG()  
+
+or  
+
+AVG( [ALL|DISTINCT] expression ) 
+
+Example:
+
+SELECT AVG(COST)  
+
+FROM PRODUCT_MAST;  
+
+• Syntax
+
+MAX()  
+
+or  
+
+MAX( [ALL|DISTINCT] expression )  
+
+Example:
+
+SELECT MAX(RATE)  
+
+FROM PRODUCT_MAST;  
+
+5. MIN Function
+
+MIN function is used to find the minimum value of a certain column. This function determines the smallest value of all selected values of a column.
+
+Syntax
+
+MIN()  
+
+or  
+
+MIN( [ALL|DISTINCT] expression )  
+
+Example:
+
+SELECT MIN(RATE)  
+
+FROM PRODUCT_MAST;  
