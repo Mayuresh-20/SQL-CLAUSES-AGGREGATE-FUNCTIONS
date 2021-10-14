@@ -8,7 +8,7 @@ The most important point to be noted here is that SQL is case insensitive, which
 
 Various Syntax in SQL
 
-• SQL CREATE TABLE Statement
+1• SQL CREATE TABLE Statement
 
 CREATE TABLE table_name(
 
@@ -26,33 +26,33 @@ PRIMARY KEY( one or more columns )
 );
 
 
-• SQL DROP TABLE Statement
+2• SQL DROP TABLE Statement
 
 DROP TABLE table_name;
 
 
-• SQL CREATE INDEX Statement
+3• SQL CREATE INDEX Statement
 
 CREATE UNIQUE INDEX index_name
 
 ON table_name ( column1, column2,...columnN);
 
 
-• SQL DROP INDEX Statement
+4• SQL DROP INDEX Statement
 
 ALTER TABLE table_name
 
 DROP INDEX index_name;
 
 
-• SQL INSERT INTO Statement
+5• SQL INSERT INTO Statement
 
 INSERT INTO table_name( column1, column2....columnN)
 
 VALUES ( value1, value2....valueN);
 
 
-• SQL UPDATE Statement
+6• SQL UPDATE Statement
 
 UPDATE table_name
 
@@ -61,48 +61,48 @@ SET column1 = value1, column2 = value2....columnN=valueN
 [ WHERE  CONDITION ];
 
 
-• SQL DELETE Statement
+7• SQL DELETE Statement
 
 DELETE FROM table_name
 
 WHERE  {CONDITION};
 
 
-• SQL DESC Statement
+8• SQL DESC Statement
 
 DESC table_name;
 
 
-• SQL TRUNCATE TABLE Statement
+9• SQL TRUNCATE TABLE Statement
 
 TRUNCATE TABLE table_name;
 
 
-• SQL ALTER TABLE Statement
+10• SQL ALTER TABLE Statement
 
 ALTER TABLE table_name {ADD|DROP|MODIFY} column_name {data_ype};
 
 
-• SQL ALTER TABLE Statement (Rename)
+11• SQL ALTER TABLE Statement (Rename)
 
 ALTER TABLE table_name RENAME TO new_table_name;
 
 
-• SQL SELECT Statement
+12• SQL SELECT Statement
 
 SELECT column1, column2....columnN
 
 FROM   table_name;
 
 
-• SQL DISTINCT Clause
+13• SQL DISTINCT Clause
 
 SELECT DISTINCT column1, column2....columnN
 
 FROM   table_name;
 
 
-• SQL WHERE Clause
+14• SQL WHERE Clause
 
 SELECT column1, column2....columnN
 
@@ -111,7 +111,7 @@ FROM   table_name
 WHERE  CONDITION;
 
 
-• SQL AND/OR Clause
+15• SQL AND/OR Clause
 
 SELECT column1, column2....columnN
 
@@ -120,7 +120,7 @@ FROM   table_name
 WHERE  CONDITION-1 {AND|OR} CONDITION-2;
 
 
-• SQL IN Clause
+16• SQL IN Clause
 
 SELECT column1, column2....columnN
 
@@ -129,7 +129,7 @@ FROM   table_name
 WHERE  column_name IN (val-1, val-2,...val-N);
 
 
-• SQL BETWEEN Clause
+17• SQL BETWEEN Clause
 
 SELECT column1, column2....columnN
 
@@ -138,7 +138,7 @@ FROM   table_name
 WHERE  column_name BETWEEN val-1 AND val-2;
 
 
-• SQL LIKE Clause
+18• SQL LIKE Clause
 
 SELECT column1, column2....columnN
 
@@ -147,7 +147,7 @@ FROM   table_name
 WHERE  column_name LIKE { PATTERN };
 
 
-• SQL ORDER BY Clause
+19• SQL ORDER BY Clause
 
 SELECT column1, column2....columnN
 
@@ -158,7 +158,7 @@ WHERE  CONDITION
 ORDER BY column_name {ASC|DESC};
 
 
-• SQL GROUP BY Clause
+20• SQL GROUP BY Clause
 
 SELECT SUM(column_name)
 
@@ -169,7 +169,7 @@ WHERE  CONDITION
 GROUP BY column_name;
 
 
-• SQL COUNT Clause
+21• SQL COUNT Clause
 
 SELECT COUNT(column_name)
 
@@ -178,7 +178,7 @@ FROM   table_name
 WHERE  CONDITION;
 
 
-• SQL HAVING Clause
+22• SQL HAVING Clause
 
 SELECT SUM(column_name)
 
@@ -191,17 +191,17 @@ GROUP BY column_name
 HAVING (arithematic function condition);
 
 
-• SQL USE Statement
+23• SQL USE Statement
 
 USE database_name;
 
 
-• SQL COMMIT Statement
+24• SQL COMMIT Statement
 
 COMMIT;
 
 
-• SQL ROLLBACK Statement
+25• SQL ROLLBACK Statement
 
 ROLLBACK;
 
